@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './App.css';
 import ListCard from './ListCard';
 
 function App({ lists }) {
@@ -8,7 +9,7 @@ function App({ lists }) {
         <ListCard key={card.id} card={card}/>    
     )
     return(
-        <div>
+        <div className='app-container'>
             {sublists}
         </div>
     );
