@@ -1,0 +1,45 @@
+.header-menu {
+    background-color: #FF6604;
+    width: 100%;
+    padding: 2px;
+}
+
+td {
+    font-size: 10pt;
+}
+
+.header-menu span {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    color: #222222;
+    line-height: 12px;
+}
+
+.header-menu img {
+    height: 18px;
+    width: 18px;
+    border: 1px white solid;
+}
+
+.header-title {
+    margin-right: 5px;
+}
+
+.img-cell{
+    width: 18px;
+    padding-right: 4px;
+}
+
+.title-cell{
+    width: 103px;
+    height: 10px;
+}
+
+.menu-cell{
+    height: 10px;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color: #222222;
+}
