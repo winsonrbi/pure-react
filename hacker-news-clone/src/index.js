@@ -20,6 +20,24 @@ const news = [
         author: "HieronymusBosch",
         publishDate: "2016-07-11 21:24:00",
         numComments: "3"
+    },
+    {
+        id: "3",
+        title: "Northvolt assembles first lithium-ion battery cell at Swedish gigafactory",
+        source: "northvolt.com",
+        points: "16",
+        author: "HieronymusBosch",
+        publishDate: "2016-07-11 21:24:00",
+        numComments: "3"
+    },
+    {
+        id: "4",
+        title: "Northvolt assembles first lithium-ion battery cell at Swedish gigafactory",
+        source: "northvolt.com",
+        points: "16",
+        author: "HieronymusBosch",
+        publishDate: "2016-07-11 21:24:00",
+        numComments: "3"
     }
 ]
 ReactDOM.render(<App news = {news}/>, document.querySelector('#root'));

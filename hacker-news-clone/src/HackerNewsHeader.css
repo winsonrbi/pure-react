@@ -31,8 +31,9 @@ td {
 }
 
 .title-cell{
-    width: 103px;
     height: 10px;
+    width: 1px;
+    white-space: nowrap;
 }
 
 .menu-cell{

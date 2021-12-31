@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './HackerNewsList.css';
 import Time from './Time';
 
 function HackerNewsList({ news }){
@@ -7,16 +8,16 @@ function HackerNewsList({ news }){
         <>
             <tr key={item.id}>
                 <td>
-                    {item.id}.
+                    <h1>{item.id}.</h1>
                 </td>
                 <td>
-                    <img src="https://news.ycombinator.com/grayarrow.gif" alt="upvote arrow"/>
+                    <img className="upvote-arrow" src="https://news.ycombinator.com/grayarrow.gif" alt="upvote arrow"/>
                 </td>
                 <td>
-                    {item.title}
+                    <h2>{item.title}</h2>
                 </td>
                 <td>
-                    ({item.source})
+                    <h3>({item.source})</h3>
                 </td>
             </tr>
             <tr>
@@ -34,6 +35,9 @@ function HackerNewsList({ news }){
             </tbody>
         </table>
     );
+}
+HackerNewsList.propTypes = {
+    news: PropTypes.array
 }
 
 export default HackerNewsList;
