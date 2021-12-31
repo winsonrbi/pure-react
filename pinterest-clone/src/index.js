@@ -1,17 +1,17 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const profile = {
+    profileHeader: {
+        name: 'Aviation Explorer',
+        imgSrc: 'https://i.pinimg.com/280x280_RS/7b/eb/40/7beb401620fabf62dc1841484eb47844.jpg'
+    },
+    profileSubMenu: {
+        numBoards: 37,
+        numPins: 8905,
+        numLikes: 186,
+        numFollowers: 8902,
+        numFollowing: 1803,
+    }
+} 
+ReactDOM.render(<App profile={profile}/>, document.querySelector('#root'));
