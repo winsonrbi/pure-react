@@ -6,6 +6,7 @@ import PinterestSubMenu from './PinterestSubMenu';
 function App({ profile }){
     return(
         <div>
+            <h1>Test</h1>
             <PinterestHeader profileHeader={profile.profileHeader}/>
             <PinterestSubMenu profileSubMenu={profile.profileSubMenu}/>
         </div>
