@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PinterestHeader from './PinterestHeader';
 import PinterestSubMenu from './PinterestSubMenu';
+import CardArea from './CardArea';
 
 function App({ profile }){
     return(
         <div>
-            <h1>Test</h1>
             <PinterestHeader profileHeader={profile.profileHeader}/>
             <PinterestSubMenu profileSubMenu={profile.profileSubMenu}/>
+            <CardArea/>
         </div>
     );
 }

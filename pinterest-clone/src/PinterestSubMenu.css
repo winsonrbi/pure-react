@@ -1,0 +1,13 @@
+.submenu{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: grey;
+    box-shadow: 0px 8px 6px -6px grey;
+}
+.submenu-item{
+    width: 160px;
+}
+table{
+    margin: auto;
+}

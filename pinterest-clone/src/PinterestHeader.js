@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './PinterestHeader.css';
 
 function PinterestHeader({ profileHeader }){
     return(

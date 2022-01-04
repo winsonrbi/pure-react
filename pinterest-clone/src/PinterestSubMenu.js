@@ -1,24 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './PinterestSubMenu.css';
 
 function PinterestSubMenu({ profileSubMenu }){
     const items = ['Boards','Pins','Likes','Followers','Following'];
     const cards = items.map(item => 
         <td key={item+'-key'}>
-            <div>
-                {
-                    (profileSubMenu['num' + item] > 1000) ? 
-                        (profileSubMenu['num'+ item] / 1000).toFixed(1)+ 'k' :
-                        profileSubMenu['num'+ item]
-                }
-            </div>
-            <div>
-                {item}
+            <div className='submenu-item'>
+                <div>
+                    {
+                        (profileSubMenu['num' + item] > 1000) ? 
+                            (profileSubMenu['num'+ item] / 1000).toFixed(1)+ 'k' :
+                            profileSubMenu['num'+ item]
+                    }
+                </div>
+                <div>
+                    {item}
+                </div>
             </div>
         </td>
         )
     return(
-        <div>
+        <div className='submenu'>
             <table>
                 <tbody>
                     <tr>
