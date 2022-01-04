@@ -1,0 +1,71 @@
+.card-container {
+    height: 335px;
+    width: 250px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+h1{
+    font-size: 18px;
+    text-align: left;
+    margin: 0px;
+}
+h2{
+    font-size: 14px;
+    color: grey;
+    text-align: left;
+    margin: 0px 0px 5px 0px;
+}
+.pic-container {
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7fr 3fr;
+    grid-template-areas: 
+    "pic1 pic1 pic1"
+    "pic2 pic3 pic4";
+    gap: 3px 3px;
+}
+.pic1 {
+    border-radius: 15px;
+    grid-area: pic1;
+    background-size: 100% 100%;
+}
+.card-pins-container {
+    background-color: rgba(34, 33, 33, 0.6);
+    width: 50px;
+    border-radius: 15px;
+    position: relative;
+    top: 150px;
+    left: 5px;
+    
+}
+.card-pins {
+    color: white;
+}
+.pic2 {
+    border-radius: 15px;
+    grid-area: pic2;
+    background-size: 100% 100%;
+}
+.pic3 {
+    border-radius: 15px;
+    grid-area: pic3;
+    background-size: 100% 100%;
+}
+.pic4 {
+    border-radius: 15px;
+    grid-area: pic4;
+    background-size: 100% 100%;
+}
+.follow-button {
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+}
+.follow-text {
+    font-weight: bolder;
+    color: rgb(161, 18, 18);
+    font-size: 14px;
+}

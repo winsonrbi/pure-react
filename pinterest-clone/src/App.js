@@ -9,7 +9,7 @@ function App({ profile }){
         <div>
             <PinterestHeader profileHeader={profile.profileHeader}/>
             <PinterestSubMenu profileSubMenu={profile.profileSubMenu}/>
-            <CardArea/>
+            <CardArea cards={profile.cards} author={profile.profileHeader.name}/>
         </div>
     );
 }
@@ -25,7 +25,8 @@ App.propTypes = {
             numLikes: PropTypes.number,
             numFollowers: PropTypes.number,
             numFollowing: PropTypes.number,
-        })
+        }),
+        cards: PropTypes.array.isRequired,
     })
 }
 export default App;

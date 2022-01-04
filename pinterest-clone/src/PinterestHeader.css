@@ -6,3 +6,7 @@ img{
     width: 80px;
     border-radius: 50%;
 }
+.header-name{
+    text-align: center;
+    font-size: 30px;
+}

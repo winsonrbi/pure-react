@@ -1,0 +1,10 @@
+.cards-grid {
+    margin: auto;
+    width: 810px; 
+    background-color: #b2b2b2;
+    padding: 10px 30px 10px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}

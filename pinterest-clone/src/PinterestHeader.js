@@ -6,7 +6,7 @@ function PinterestHeader({ profileHeader }){
     return(
         <div>
             <img src={profileHeader.imgSrc}  alt={profileHeader.name + " profile picture"}/>
-            <h1>{profileHeader.name}</h1>
+            <h1 className='header-name'>{profileHeader.name}</h1>
         </div>
     );
 }
