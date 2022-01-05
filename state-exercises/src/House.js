@@ -9,7 +9,7 @@ class House extends React.Component {
                 kitchen: true,
                 bathroom: false,
                 livingroom: true,
-                bedrooom: false,
+                bedroom: false,
             }
         }
         this.toggleKitchen = this.toggleKitchen.bind(this);
@@ -20,42 +20,59 @@ class House extends React.Component {
 
     toggleKitchen(){
         this.setState((state,props) => {
+            const rooms = state.rooms;
             return {
                 rooms: {
-                    kitchen: !state.rooms.kitchen
+                    kitchen: !rooms.kitchen,
+                    bathroom: rooms.bathroom,
+                    livingroom: rooms.livingroom,
+                    bedroom: rooms.bedroom,
                 }
             }
         });
     }
     toggleBathroom(){
         this.setState((state,props) => {
+            const rooms = state.rooms;
             return {
                 rooms: {
-                    bathroom: !state.bathroom
+                    kitchen: rooms.kitchen,
+                    bathroom: !rooms.bathroom,
+                    livingroom: rooms.livingroom,
+                    bedroom: rooms.bedroom,
                 }
             }
         });
     }
     toggleLivingroom(){
         this.setState((state,props) => {
+            const rooms = state.rooms;
             return {
                 rooms: {
-                    livingroom: !state.livingroom
+                    kitchen: rooms.kitchen,
+                    bathroom: rooms.bathroom,
+                    livingroom: !rooms.livingroom,
+                    bedroom: rooms.bedroom,
                 }
             }
         });
     }
     toggleBedroom(){
         this.setState((state,props) => {
+            const rooms = state.rooms;
             return {
-                rooms:{
-                    bedroom: !state.bedroom
+                rooms: {
+                    kitchen: rooms.kitchen,
+                    bathroom: rooms.bathroom,
+                    livingroom: rooms.livingroom,
+                    bedroom: !rooms.bedroom,
                 }
             }
         });
     }
     
     render() {
+        console.log(this.state);
         return(
             <div>
                 <div>
@@ -78,7 +95,7 @@ class House extends React.Component {
                 </div>
                 <div>
                     <span>Bedroom</span>
-                    <div className={'light-'+this.state.rooms.bedrooom.toString()}>
+                    <div className={'light-'+this.state.rooms.bedroom.toString()}>
                     </div>
                     <button onClick={this.toggleBedroom}>Toggle Light Switch</button>
                 </div>
@@ -87,5 +104,4 @@ class House extends React.Component {
     }
 
 }
-
 export default House;
