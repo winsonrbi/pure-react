@@ -1,0 +1,10 @@
+.light-false{
+    background-color:grey;
+    height:20px;
+    width: 20px;
+}
+.light-true{
+    background-color: yellow;
+    height:20px;
+    width: 20px;
+}
